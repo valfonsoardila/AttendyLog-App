@@ -1,0 +1,23 @@
+.custom-google-button {
+    height: 100% !important;
+    width: 15% !important;
+    background: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 4rem !important;
+    color: white !important;
+    cursor: pointer !important;
+  }
+  
+  /* Estilos para los elementos dentro del botón personalizado */
+  .custom-google-button div {
+    border-radius: 4rem !important;
+    padding: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Ocultar el elemento 'span' dentro del botón personalizado */
+  .custom-google-button span {
+    display: none !important;
+  }

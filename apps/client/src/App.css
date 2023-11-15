@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html, body {
+  font-size: 16px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    20deg,
+    #fff 10%,
+    rgb(245, 245, 245) 30%,
+    /* Cambia este valor para hacer la transición más suave */ rgb(225, 225, 245) 50%,
+    /* Añade más paradas de color para una transición más suave */ rgb(245, 245, 245) 80%,
+    /* Añade más paradas de color para una transición más suave */ rgb(245, 245, 245)100%
+  );
+}
+.App {
   text-align: center;
+  position: fixed;
+  background: linear-gradient(
+    20deg,
+    #fff 10%,
+    rgb(245, 245, 245) 30%,
+    /* Cambia este valor para hacer la transición más suave */ rgb(225, 225, 245) 50%,
+    /* Añade más paradas de color para una transición más suave */ rgb(245, 245, 245) 80%,
+    /* Añade más paradas de color para una transición más suave */ rgb(245, 245, 245)100%
+  );
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#tsparticles {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background: rgba(70, 70, 70, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, rgba(240, 240, 240, 0.7), rgba(180,180,180,0.8));
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
 }
 
-.card {
-  padding: 2em;
+::-webkit-scrollbar-thumb:hover {
+  animation: blink 1s ease infinite;
+  background: linear-gradient(to top, rgba(244, 244, 244, 0.8), rgba(18,18,32,0.6));
+  border-radius: 12px;
+}
+.lazy-load-image-background.blur {
+  filter: blur(15px);
 }
 
-.read-the-docs {
-  color: #888;
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+  transition: filter .3s;
 }
+
+.lazy-load-image-background.blur > img {
+  opacity: 0;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded > img {
+  opacity: 1;
+  transition: opacity .3s;
+}
+

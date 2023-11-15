@@ -1,0 +1,22 @@
+.main-container-content{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    height: 100%;
+    background: transparent;
+}
+.main-container-body{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+}
+.main-container-body-content{
+    display: flex;
+    height: 98%;
+    width: 98%;
+    background: transparent;
+}

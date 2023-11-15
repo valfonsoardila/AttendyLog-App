@@ -1,0 +1,207 @@
+.logocontainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.logocontainer img {
+  width: 18%;
+  height: 80%;
+}
+.logotext-container{
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: center;
+}
+.logotext {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.logintext {
+  margin-top: 15px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+}
+.formcontainer {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.form-group {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+.form-group span {
+  margin-top: 1%;
+  align-self: start;
+  color: rgba(10, 10, 40, 0.9);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form-group label {
+  align-self: self-start;
+  font-size: 20px;
+  color: rgba(10, 10, 40, 0.9);
+  font-weight: 600;
+}
+.form-group svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  color: rgba(10, 10, 40, 0.9);
+}
+.form-group input {
+  width: 100%;
+  height: 50%;
+  border: none;
+  border-bottom: 1px solid #03a6a6;
+  background: transparent;
+  outline: none;
+  color: #000;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.form-group input::placeholder {
+  color: rgba(15, 15, 15, 0.7);
+  font-size: 16px;
+}
+.form-group:active input {
+
+  border-bottom: 1px solid #fff;
+}
+.glow-on-hover {
+  width: 220px;
+  height: 2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgba(10, 10, 10);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.glow-on-hover span {
+  font-weight: 600;
+}
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 40, 0.9);
+  box-shadow: 0 0 10px rgba(63, 63, 63, 0.9);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+}
+.form-footer-text {
+  color: #000;
+}
+.form-footer-text span {
+  color: rgba(10, 10, 40, 0.9);
+  font-weight: 600;
+  cursor: pointer;
+}
+.form-footer-divider {
+  display: flex;
+  width: 80%;
+  height: 1px;
+  background: rgba(10, 10, 40, 0.9);
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.form-footer-google {
+  display: flex;
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

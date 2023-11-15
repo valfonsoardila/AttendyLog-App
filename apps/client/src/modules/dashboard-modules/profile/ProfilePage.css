@@ -1,0 +1,102 @@
+.container-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.profile-settings {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+  width: -webkit-fill-available;
+  height: 100%;
+}
+.main-profile-settings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.profile-settings__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+}
+.profile-settings__header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.profile-settings__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: -webkit-fill-available;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-items: center;
+}
+.profile-settings__body__item {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 8%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  cursor: pointer;
+}
+.profile-settings__body__item:hover {
+  background: rgb(225, 225, 225, .6);
+}
+.profile-settings__body__item span{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.profile-settings__body__item svg{
+  width: 20px;
+  height: 20px;
+  color: rgba(25, 25, 25, 0.9);
+}
+.profile-settings__content__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: local;
+  background-position-x: center;
+  background-position-y: center;
+  width: 35%;
+  height: 100%;
+}
+.profile-image svg {
+  width: 18%;
+  height: 18%;
+  color: rgba(45, 45, 45, 0.5);
+  cursor: pointer;
+}
+.profile-image svg:hover {
+  color: rgba(45, 45, 45, 1);
+}

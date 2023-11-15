@@ -1,0 +1,102 @@
+.attendy-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.attendy-container-header {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.attendy-container-header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.attendy-container-body {
+  display: flex;
+  width: 100%;
+  height: 92%;
+}
+.assistance-inquiries {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 1%;
+}
+.assistance-inquiries h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 0%;
+  padding: 10px;
+}
+.assistance-inquiries-header {
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  height: 5%;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.attendy-container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 65%;
+  height: -webkit-fill-available;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.form-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 5%;
+}
+.form-header h3 {
+  font-size: 18px;
+  margin: 0%;
+  font-weight: bold;
+  color: #000;
+}
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+.form-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  text-align: center;
+  transition: height 0.5s ease-in-out;
+}

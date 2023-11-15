@@ -15,5 +15,13 @@
   ],
   "devDependencies": {
     "turbo": "^1.10.16"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "framer-motion": "^10.16.5",
+    "react-router-dom": "^6.18.0",
+    "zustand": "^4.4.6"
   }
 }

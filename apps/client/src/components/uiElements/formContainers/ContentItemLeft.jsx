@@ -1,4 +1,5 @@
 import './ContentItemLeft.css'
+import useCounterStore from '../../../store/counterStore'
 
 const ContentItemLeft = (props) => {
     const {text} = props

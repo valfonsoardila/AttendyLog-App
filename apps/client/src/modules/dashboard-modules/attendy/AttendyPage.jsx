@@ -55,7 +55,10 @@ const AttendyPage = () => {
                 className="form-body"
               >
                 <div className="form-body-header">
-                  <ButtonSelection handleDialogOpen={handleDialogOpen} eventType={eventType} />
+                  <ButtonSelection
+                    handleDialogOpen={handleDialogOpen}
+                    eventType={eventType}
+                  />
                   <div className="form-body-header-calendar">
                     <label htmlFor="date">Date</label>
                     <input type="date" name="date" id="date" />
@@ -63,10 +66,22 @@ const AttendyPage = () => {
                 </div>
                 <div className="form-body-content">
                   <div className="form-body-content-left">
-                    <ContentItemLeft text={"Hermanos"} />
-                    <ContentItemLeft text={"Hermanas"} />
-                    <ContentItemLeft text={"Niños"} />
-                    <ContentItemLeft text={"Amigos"} />
+                    {eventType === "faith" ? (
+                      <>
+                        <ContentItemLeft text={"Hermanos"} />
+                        <ContentItemLeft text={"Hermanas"} />
+                        <ContentItemLeft text={"Niños"} />
+                        <ContentItemLeft text={"Amigos"} />
+                      </>
+                    ) : (
+                      <>
+                        <ContentItemLeft text={"Ancianos"} />
+                        <ContentItemLeft text={"Caballeros"} />
+                        <ContentItemLeft text={"Damas"} />
+                        <ContentItemLeft text={"Niños"} />
+                        <ContentItemLeft text={"Niñas"} />
+                      </>
+                    )}
                   </div>
                   <div className="form-body-content-right">
                     <ContentItemRight />

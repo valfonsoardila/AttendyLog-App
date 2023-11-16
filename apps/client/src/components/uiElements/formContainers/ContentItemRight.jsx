@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd, faMinus } from "@fortawesome/free-solid-svg-icons";
+import useCounterStore from "../../../store/counterStore";
 import "./ContentItemRight.css";
 
 const ContentItemRight = () => {

@@ -28,7 +28,7 @@
   height: 25%;
 }
 .user-image img {
-  width: 26%;
+  width: auto;
   height: 100%;
   border-radius: 50%;
 }

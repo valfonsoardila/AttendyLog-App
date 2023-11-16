@@ -128,6 +128,14 @@
   width: 100%;
   padding: 1px;
 }
+.form-body-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1px;
+}
 .form-body-header button{
   width: 100%;
   height: 100%;
@@ -162,7 +170,6 @@
 .form-body-header-calendar{
   display: flex;
   flex-direction: row;
-  width: -webkit-fill-available;
   align-items: center;
   padding: 8px;
 }
@@ -172,11 +179,49 @@
   color: #000;
   margin-right: 1%;
 }
+.form-body-header-detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+}
+.form-body-header-detail label{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 1%;
+}
+.form-body-header-detail input[type="text"] {
+  background: #fff;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #ccc; /* Borde opcional para darle un aspecto más definido */
+  padding: 8px; /* Ajusta el espaciado interno según sea necesario */
+  border-radius: 4px; /* Bordes redondeados */
+  outline: none; /* Quita el contorno predeterminado al hacer clic */
+  border-image: initial;
+}
 .form-body-content{
+  display: flex;
+  width: 100%;
+  height: -webkit-fill-available;
+  padding: 1px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.form-body-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+.form-body-subcontent{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 88%;
   padding: 1px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -193,5 +238,46 @@
   flex-direction: column;
   width: 40%;
   height: 100%;
+  padding: 1px;
+}
+.form-body-header-total{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding: 1px;
+}
+.form-body-header-total label{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 1%;
+}
+.form-body-header-total input[type="text"] {
+  background: #fff;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #ccc; /* Borde opcional para darle un aspecto más definido */
+  padding: 8px; /* Ajusta el espaciado interno según sea necesario */
+  border-radius: 4px; /* Bordes redondeados */
+  outline: none; /* Quita el contorno predeterminado al hacer clic */
+  border-image: initial;
+  width: 30%;
+}
+.form-body-subcontent-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1px;
+}
+.form-body-content-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 1px;
 }

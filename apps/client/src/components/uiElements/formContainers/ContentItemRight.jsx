@@ -1,31 +1,30 @@
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd, faMinus } from "@fortawesome/free-solid-svg-icons";
-import useCounterStore from "../../../store/counterStore";
+import useAttendeeStore from "../../../store/useAttendeeStore";
 import "./ContentItemRight.css";
 
-const ContentItemRight = () => {
-  // Estado local para almacenar el valor actual
-  const [counter, setCounter] = useState(0);
-  // Función para incrementar el contador
-  const handleAdd = () => {
-    setCounter(counter + 1);
-  };
-  // Función para decrementar el contador, pero no menos de 0
-  const handleSubtract = () => {
-    if (counter >= 0) {
-      setCounter(counter - 1);
-    }
+const ContentItemRight = (props) => {
+  const { eventType, type } = props;
+  const { sum, increment, decrement } = useAttendeeStore();
+  
+  const handleIncrement = () => {
+    increment(eventType, type);
+    sum(eventType);
   };
   
+  const handleDecrement = () => {
+    decrement(eventType, type);
+    sum(eventType);
+  };
+
   return (
     <>
       <div className="form-body-content-button">
         <div className="form-body-content-button-item">
-          <button onClick={handleSubtract}>
+          <button onClick={handleDecrement}>
             <FontAwesomeIcon icon={faMinus} />
           </button>
-          <button onClick={handleAdd}>
+          <button onClick={handleIncrement}>
             <FontAwesomeIcon icon={faAdd} />
           </button>
         </div>

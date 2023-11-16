@@ -1,0 +1,346 @@
+[
+  {
+      "id": 5389174194,
+      "firstName": "Mallie",
+      "lastName": "Fisher",
+      "username": "mallie_fisher",
+      "password": "MallieFisher@123",
+      "registrationDate": "15/04/2023"
+  },
+  {
+      "id": 171334939,
+      "firstName": "Glen",
+      "lastName": "Lowe",
+      "username": "glen_lowe",
+      "password": "GlenLowe@123",
+      "registrationDate": "22/07/2023"
+  },
+  {
+      "id": 1679520702,
+      "firstName": "Ron",
+      "lastName": "Wilkinson",
+      "username": "ron_wilkinson",
+      "password": "RonWilkinson@123",
+      "registrationDate": "03/11/2023"
+  },
+  {
+      "id": 3543122189,
+      "firstName": "Ari",
+      "lastName": "Lawson",
+      "username": "ari_lawson",
+      "password": "AriLawson@123",
+      "registrationDate": "12/06/2023"
+  },
+  {
+      "id": 8063210196,
+      "firstName": "Zane",
+      "lastName": "Roberts",
+      "username": "zane_roberts",
+      "password": "ZaneRoberts@123",
+      "registrationDate": "29/02/2023"
+  },
+  {
+      "id": 276925927,
+      "firstName": "Ruthie",
+      "lastName": "Martinez",
+      "username": "ruthie_martinez",
+      "password": "RuthieMartinez@123",
+      "registrationDate": "05/09/2023"
+  },
+  {
+      "id": 1727038364,
+      "firstName": "Dawson",
+      "lastName": "Wright",
+      "username": "dawson_wright",
+      "password": "DawsonWright@123",
+      "registrationDate": "14/02/2023"
+  },
+  {
+      "id": 4288231597,
+      "firstName": "Esme",
+      "lastName": "Moss",
+      "username": "esme_moss",
+      "password": "EsmeMoss@123",
+      "registrationDate": "23/10/2023"
+  },
+  {
+      "id": 1617857629,
+      "firstName": "Jaslene",
+      "lastName": "Dunn",
+      "username": "jaslene_dunn",
+      "password": "JasleneDunn@123",
+      "registrationDate": "02/06/2023"
+  },
+  {
+      "id": 1769117239,
+      "firstName": "Nina",
+      "lastName": "Glover",
+      "username": "nina_glover",
+      "password": "NinaGlover@123",
+      "registrationDate": "19/03/2023"
+  },
+  {
+      "id": 5815348429,
+      "firstName": "Karissa",
+      "lastName": "Gonzales",
+      "username": "karissa_gonzales",
+      "password": "KarissaGonzales@123",
+      "registrationDate": "27/08/2023"
+  },
+  {
+      "id": 5162323698,
+      "firstName": "Chaz",
+      "lastName": "Marshall",
+      "username": "chaz_marshall",
+      "password": "ChazMarshall@123",
+      "registrationDate": "16/01/2023"
+  },
+  {
+      "id": 9587320643,
+      "firstName": "Estrella",
+      "lastName": "Mcbride",
+      "username": "estrella_mcbride",
+      "password": "EstrellaMcbride@123",
+      "registrationDate": "07/07/2023"
+  },
+  {
+      "id": 6398778337,
+      "firstName": "Branden",
+      "lastName": "Leblanc",
+      "username": "branden_leblanc",
+      "password": "BrandenLeblanc@123",
+      "registrationDate": "13/12/2023"
+  },
+  {
+      "id": 3543706977,
+      "firstName": "Kiara",
+      "lastName": "Fleming",
+      "username": "kiara_fleming",
+      "password": "KiaraFleming@123",
+      "registrationDate": "24/04/2023"
+  },
+  {
+      "id": 8894806596,
+      "firstName": "Dalia",
+      "lastName": "Warner",
+      "username": "dalia_warner",
+      "password": "DaliaWarner@123",
+      "registrationDate": "01/11/2023"
+  },
+  {
+      "id": 5577697961,
+      "firstName": "Edith",
+      "lastName": "Morton",
+      "username": "edith_morton",
+      "password": "EdithMorton@123",
+      "registrationDate": "10/06/2023"
+  },
+  {
+      "id": 8914829515,
+      "firstName": "Otis",
+      "lastName": "Trevino",
+      "username": "otis_trevino",
+      "password": "OtisTrevino@123",
+      "registrationDate": "27/01/2023"
+  },
+  {
+      "id": 5268680355,
+      "firstName": "Kailee",
+      "lastName": "Lopez",
+      "username": "kailee_lopez",
+      "password": "KaileeLopez@123",
+      "registrationDate": "05/09/2023"
+  },
+  {
+      "id": 3296281803,
+      "firstName": "Marissa",
+      "lastName": "Oneill",
+      "username": "marissa_oneill",
+      "password": "MarissaOneill@123",
+      "registrationDate": "14/04/2023"
+  },
+  {
+      "id": 1196259258,
+      "firstName": "Harrison",
+      "lastName": "Ward",
+      "username": "harrison_ward",
+      "password": "HarrisonWard@123",
+      "registrationDate": "23/10/2023"
+  },
+  {
+      "id": 8920299728,
+      "firstName": "Catherine",
+      "lastName": "Caldwell",
+      "username": "catherine_caldwell",
+      "password": "CatherineCaldwell@123",
+      "registrationDate": "01/06/2023"
+  },
+  {
+      "id": 6544996359,
+      "firstName": "Pamela",
+      "lastName": "Franco",
+      "username": "pamela_franco",
+      "password": "PamelaFranco@123",
+      "registrationDate": "08/03/2023"
+  },
+  {
+      "id": 7624817849,
+      "firstName": "Elvis",
+      "lastName": "York",
+      "username": "elvis_york",
+      "password": "ElvisYork@123",
+      "registrationDate": "19/09/2023"
+  },
+  {
+      "id": 8025674549,
+      "firstName": "Ayana",
+      "lastName": "Orr",
+      "username": "ayana_orr",
+      "password": "AyanaOrr@123",
+      "registrationDate": "28/05/2023"
+  },
+  {
+      "id": 2893799185,
+      "firstName": "Aya",
+      "lastName": "Dickerson",
+      "username": "aya_dickerson",
+      "password": "AyaDickerson@123",
+      "registrationDate": "17/12/2023"
+  },
+  {
+      "id": 4709787808,
+      "firstName": "Camila",
+      "lastName": "Santos",
+      "username": "camila_santos",
+      "password": "CamilaSantos@123",
+      "registrationDate": "26/08/2023"
+  },
+  {
+      "id": 3856955242,
+      "firstName": "Xzavier",
+      "lastName": "Sampson",
+      "username": "xzavier_sampson",
+      "password": "XzavierSampson@123",
+      "registrationDate": "04/02/2023"
+  },
+  {
+      "id": 6778387486,
+      "firstName": "Kadence",
+      "lastName": "Lambert",
+      "username": "kadence_lambert",
+      "password": "KadenceLambert@123",
+      "registrationDate": "12/07/2023"
+  },
+  {
+      "id": 8423195916,
+      "firstName": "Elle",
+      "lastName": "Villanueva",
+      "username": "elle_villanueva",
+      "password": "ElleVillanueva@123",
+      "registrationDate": "20/04/2023"
+  },
+  {
+      "id": 4912756152,
+      "firstName": "Coleman",
+      "lastName": "Sellers",
+      "username": "coleman_sellers",
+      "password": "ColemanSellers@123",
+      "registrationDate": "29/11/2023"
+  },
+  {
+      "id": 8529392492,
+      "firstName": "Regina",
+      "lastName": "Bonilla",
+      "username": "regina_bonilla",
+      "password": "ReginaBonilla@123",
+      "registrationDate": "09/09/2023"
+  },
+  {
+      "id": 6226382584,
+      "firstName": "Zoie",
+      "lastName": "Wood",
+      "username": "zoie_wood",
+      "password": "ZoieWood@123",
+      "registrationDate": "18/05/2023"
+  },
+  {
+      "id": 9852191559,
+      "firstName": "Quentin",
+      "lastName": "Sheppard",
+      "username": "quentin_sheppard",
+      "password": "QuentinSheppard@123",
+      "registrationDate": "07/10/2023"
+  },
+  {
+      "id": 6751562825,
+      "firstName": "Beatrice",
+      "lastName": "Conway",
+      "username": "beatrice_conway",
+      "password": "BeatriceConway@123",
+      "registrationDate": "16/07/2023"
+  },
+  {
+      "id": 9353734563,
+      "firstName": "Mira",
+      "lastName": "Gates",
+      "username": "mira_gates",
+      "password": "MiraGates@123",
+      "registrationDate": "25/01/2023"
+  },
+  {
+      "id": 1356672076,
+      "firstName": "Esther",
+      "lastName": "Stein",
+      "username": "esther_stein",
+      "password": "EstherStein@123",
+      "registrationDate": "03/08/2023"
+  },
+  {
+      "id": 7564172077,
+      "firstName": "Krystal",
+      "lastName": "Owens",
+      "username": "krystal_owens",
+      "password": "KrystalOwens@123",
+      "registrationDate": "11/03/2023"
+  },
+  {
+      "id": 9359889464,
+      "firstName": "Amira",
+      "lastName": "Knox",
+      "username": "amira_knox",
+      "password": "AmiraKnox@123",
+      "registrationDate": "20/09/2023"
+  },
+  {
+      "id": 9789286666,
+      "firstName": "Ramon",
+      "lastName": "Higgins",
+      "username": "ramon_higgins",
+      "password": "RamonHiggins@123",
+      "registrationDate": "28/04/2023"
+  },
+  {
+      "id": 6685016545,
+      "firstName": "Nikolai",
+      "lastName": "Cantu",
+      "username": "nikolai_cantu",
+      "password": "NikolaiCantu@123",
+      "registrationDate": "06/12/2023"
+  },
+  {
+      "id": 6751945397,
+      "firstName": "Trey",
+      "lastName": "Hodge",
+      "username": "trey_hodge",
+      "password": "TreyHodge@123",
+      "registrationDate": "14/08/2023"
+  },
+  {
+      "id": 6422330924,
+      "firstName": "Ryder",
+      "lastName": "Moss",
+      "username": "ryder_moss",
+      "password": "RyderMoss@123",
+      "registrationDate": "18/09/2023"
+  }
+]

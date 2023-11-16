@@ -5,6 +5,7 @@ import ContentItemLeft from "../../../components/uiElements/formContainers/Conte
 import ContentItemRight from "../../../components/uiElements/formContainers/ContentItemRight";
 import ButtonSelection from "../../../components/uiElements/buttonSelection/ButtonSelection";
 import useAttendeeStore from "../../../store/useAttendeeStore";
+import SimpleTable from "../../../components/uiElements/table/SimpleTable";
 import "./AttendyPage.css";
 
 const AttendyPage = () => {
@@ -15,7 +16,7 @@ const AttendyPage = () => {
   const [image, setImage] = useState(resources.attend); // Set the image to the default one
   const attendeeStore = useAttendeeStore(); // Use the store
   const totalValue = attendeeStore[eventType]?.total || 0; // Get the total value from the store
-
+  
   // Mostrar el valor de total en la consola
   // console.log("Total value:", totalValue);
 
@@ -254,7 +255,9 @@ const AttendyPage = () => {
           <div className="assistance-inquiries-header">
             <h3>Attendances registered</h3>
           </div>
-          <div className="assistance-inquiries-body"></div>
+          <div className="assistance-inquiries-body">
+            <SimpleTable />
+          </div>
         </div>
       </div>
     </div>

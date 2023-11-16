@@ -9,6 +9,9 @@ import "./LoginPage.css";
 const LoginPage = ({ onComponentChange }) => {
   const [passwordValue, setPasswordValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
+  const [message, setMessage] = useState(""); // Para mostrar mensajes al usuario
+  const [alertView, setAlertView] = useState(false); // Para mostrar mensajes al usuario
+
 
   const handleRegisterClick = () => {
     onComponentChange("register");
@@ -16,15 +19,40 @@ const LoginPage = ({ onComponentChange }) => {
   const handleForgotClick = () => {
     onComponentChange("forgot");
   };
-  const login = () => {
-    window.location.href = "/dashboard";
-  };
   const handleInputChangeEmail = (e) => {
     setEmailValue(e.target.value);
   };
   const handleInputChangePassword = (e) => {
     setPasswordValue(e.target.value);
   };
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          emailValue,
+          passwordValue,
+        }),
+      });
+
+      if (response.ok) {
+        // Manejar la respuesta exitosa, por ejemplo, redirigir a otra página
+        console.log("Inicio de sesión exitoso");
+        window.location.href = "/dashboard";
+      } else {
+        // Manejar errores, por ejemplo, mostrar un mensaje de error
+        console.error("Error al iniciar sesión");
+      }
+    } catch (error) {
+      console.error("Error de red:", error);
+    }
+  };
+
+
   return (
     <>
       <div className="logocontainer">
@@ -68,7 +96,7 @@ const LoginPage = ({ onComponentChange }) => {
             </span>
           </div>
           <div className="form-group">
-            <CustomButton type="button" onClick={login} text={"Login"} />
+            <CustomButton type="button" onClick={handleLogin} text={"Login"}  />
           </div>
         </div>
         <div className="form-footer">
@@ -80,6 +108,22 @@ const LoginPage = ({ onComponentChange }) => {
           <div className="form-footer-google">
             <ApiGoogle />
           </div> */}
+        </div>
+        <div className="form-footer-alert">
+          {alertView && (
+            <div
+              className="form-message"
+              style={{
+                background: message.includes("Error")
+                  ? "#f23030"
+                  : message.includes("ingresa")
+                  ? "#f23030"
+                  : message.includes("incorrectos") ? "#f23030" : message.includes("válido") ? "#f23030" : message.includes("caracteres") ? "#f23030" : "green",
+              }}
+            >
+              {message && <p>{message}</p>}
+            </div>
+          )}
         </div>
       </div>
     </>

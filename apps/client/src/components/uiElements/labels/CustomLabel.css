@@ -1,0 +1,6 @@
+.custom-label input{
+  align-self: self-start;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+}

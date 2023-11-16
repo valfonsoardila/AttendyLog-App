@@ -1,0 +1,382 @@
+{
+  "attendances": [
+    {
+      "format": "faith",
+      "hermanos": 27,
+      "hermanas": 35,
+      "niños": 12,
+      "amigos": 43,
+      "registrationDate": "15/05/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 14,
+      "hermanas": 22,
+      "niños": 30,
+      "amigos": 19,
+      "registrationDate": "02/11/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 38,
+      "hermanas": 18,
+      "niños": 47,
+      "amigos": 11,
+      "registrationDate": "23/07/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 29,
+      "hermanas": 15,
+      "niños": 25,
+      "amigos": 36,
+      "registrationDate": "10/03/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 40,
+      "hermanas": 21,
+      "niños": 18,
+      "amigos": 31,
+      "registrationDate": "05/09/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 48,
+      "hermanas": 33,
+      "niños": 13,
+      "amigos": 26,
+      "registrationDate": "18/08/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 19,
+      "hermanas": 44,
+      "niños": 49,
+      "amigos": 10,
+      "registrationDate": "14/02/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 45,
+      "hermanas": 17,
+      "niños": 14,
+      "amigos": 39,
+      "registrationDate": "09/12/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 27,
+      "hermanas": 21,
+      "niños": 36,
+      "amigos": 35,
+      "registrationDate": "02/01/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 36,
+      "hermanas": 19,
+      "niños": 43,
+      "amigos": 34,
+      "registrationDate": "16/10/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 14,
+      "hermanas": 16,
+      "niños": 28,
+      "amigos": 29,
+      "registrationDate": "04/07/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 22,
+      "hermanas": 29,
+      "niños": 49,
+      "amigos": 44,
+      "registrationDate": "21/02/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 46,
+      "hermanas": 12,
+      "niños": 39,
+      "amigos": 46,
+      "registrationDate": "12/09/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 20,
+      "hermanas": 47,
+      "niños": 25,
+      "amigos": 47,
+      "registrationDate": "01/04/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 15,
+      "hermanas": 33,
+      "niños": 32,
+      "amigos": 32,
+      "registrationDate": "09/11/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 48,
+      "hermanas": 24,
+      "niños": 44,
+      "amigos": 15,
+      "registrationDate": "02/06/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 37,
+      "hermanas": 23,
+      "niños": 42,
+      "amigos": 28,
+      "registrationDate": "20/06/2023"
+    },
+    {
+      "format": "faith",
+      "hermanos": 20,
+      "hermanas": 41,
+      "niños": 32,
+      "amigos": 24,
+      "registrationDate": "07/01/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 45,
+      "caballeros": 67,
+      "damas": 89,
+      "niños": 50,
+      "niñas": 22,
+      "registrationDate": "21/05/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 33,
+      "caballeros": 78,
+      "damas": 54,
+      "niños": 90,
+      "niñas": 12,
+      "registrationDate": "14/11/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 59,
+      "caballeros": 23,
+      "damas": 76,
+      "niños": 65,
+      "niñas": 43,
+      "registrationDate": "04/08/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 70,
+      "caballeros": 45,
+      "damas": 88,
+      "niños": 31,
+      "niñas": 15,
+      "registrationDate": "10/03/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 20,
+      "caballeros": 34,
+      "damas": 92,
+      "niños": 76,
+      "niñas": 59,
+      "registrationDate": "05/09/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 29,
+      "caballeros": 65,
+      "damas": 42,
+      "niños": 22,
+      "niñas": 18,
+      "registrationDate": "18/08/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 50,
+      "caballeros": 88,
+      "damas": 37,
+      "niños": 44,
+      "niñas": 20,
+      "registrationDate": "14/02/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 36,
+      "caballeros": 21,
+      "damas": 77,
+      "niños": 15,
+      "niñas": 38,
+      "registrationDate": "09/12/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 24,
+      "caballeros": 53,
+      "damas": 48,
+      "niños": 28,
+      "niñas": 49,
+      "registrationDate": "20/06/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 41,
+      "caballeros": 29,
+      "damas": 50,
+      "niños": 41,
+      "niñas": 10,
+      "registrationDate": "07/01/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 32,
+      "caballeros": 19,
+      "damas": 46,
+      "niños": 23,
+      "niñas": 30,
+      "registrationDate": "22/10/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 22,
+      "caballeros": 43,
+      "damas": 58,
+      "niños": 17,
+      "niñas": 35,
+      "registrationDate": "19/03/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 47,
+      "caballeros": 26,
+      "damas": 55,
+      "niños": 37,
+      "niñas": 42,
+      "registrationDate": "04/04/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 38,
+      "caballeros": 44,
+      "damas": 60,
+      "niños": 45,
+      "niñas": 28,
+      "registrationDate": "08/09/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 15,
+      "caballeros": 35,
+      "damas": 83,
+      "niños": 19,
+      "niñas": 21,
+      "registrationDate": "13/05/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 26,
+      "caballeros": 57,
+      "damas": 71,
+      "niños": 40,
+      "niñas": 50,
+      "registrationDate": "01/11/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 17,
+      "caballeros": 33,
+      "damas": 49,
+      "niños": 27,
+      "niñas": 36,
+      "registrationDate": "16/07/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 39,
+      "caballeros": 28,
+      "damas": 64,
+      "niños": 35,
+      "niñas": 13,
+      "registrationDate": "02/02/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 28,
+      "caballeros": 66,
+      "damas": 52,
+      "niños": 48,
+      "niñas": 32,
+      "registrationDate": "17/09/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 19,
+      "caballeros": 45,
+      "damas": 79,
+      "niños": 29,
+      "niñas": 15,
+      "registrationDate": "28/04/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 44,
+      "caballeros": 30,
+      "damas": 61,
+      "niños": 14,
+      "niñas": 38,
+      "registrationDate": "11/12/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 33,
+      "caballeros": 21,
+      "damas": 48,
+      "niños": 20,
+      "niñas": 45,
+    "registrationDate": "26/08/2023"
+  },
+    {
+      "format": "social",
+      "ancianos": 28,
+      "caballeros": 55,
+      "damas": 77,
+      "niños": 36,
+      "niñas": 48,
+      "registrationDate": "13/03/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 46,
+      "caballeros": 33,
+      "damas": 80,
+      "niños": 50,
+      "niñas": 25,
+      "registrationDate": "03/09/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 38,
+      "caballeros": 39,
+      "damas": 67,
+      "niños": 31,
+      "niñas": 20,
+      "registrationDate": "14/05/2023"
+    },
+    {
+      "format": "social",
+      "ancianos": 24,
+      "caballeros": 22,
+      "damas": 45,
+      "niños": 19,
+      "niñas": 41,
+      "registrationDate": "09/11/2023"
+    }
+  ]
+}

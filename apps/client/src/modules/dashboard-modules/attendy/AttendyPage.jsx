@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ContentItemLeft from "../../../components/uiElements/formContainers/ContentItemLeft";
 import ContentItemRight from "../../../components/uiElements/formContainers/ContentItemRight";
+import ButtonSelection from "../../../components/uiElements/buttonSelection/ButtonSelection";
 import "./AttendyPage.css";
 
 const AttendyPage = () => {
@@ -54,11 +55,7 @@ const AttendyPage = () => {
                 className="form-body"
               >
                 <div className="form-body-header">
-                  <button onClick={handleDialogOpen}>
-                    <h3>
-                      {eventType === "faith" ? "Faith Event" : "Social Event"}
-                    </h3>
-                  </button>
+                  <ButtonSelection handleDialogOpen={handleDialogOpen} eventType={eventType} />
                   <div className="form-body-header-calendar">
                     <label htmlFor="date">Date</label>
                     <input type="date" name="date" id="date" />

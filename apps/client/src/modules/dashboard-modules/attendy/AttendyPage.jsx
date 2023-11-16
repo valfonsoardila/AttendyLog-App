@@ -28,6 +28,7 @@ const AttendyPage = () => {
           <div className="assistance-inquiries-header">
             <h3>Attendances registered</h3>
           </div>
+          <div className="assistance-inquiries-body"></div>
         </div>
       </div>
     </div>

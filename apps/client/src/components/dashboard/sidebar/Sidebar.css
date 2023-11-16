@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 .profile img {
-  height: 80%;
+  height: 70%;
 }
 .profile h1 {
   font-size: 14px;
@@ -89,7 +89,7 @@
   height: 12%;
   font-size: 18px;
   font-weight: 600;
-  color: #e6b6f5;
+  color: #ebc8f5;
   align-items: center;
   justify-content: center;
 }

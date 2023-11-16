@@ -1,9 +1,15 @@
+import { useState } from "react";
 import { resources } from "../../../assets/resources";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
+import CustomInput from "../../../components/uiElements/inputs/CustomInput";
+import CustomButton from "../../../components/uiElements/buttons/CustomButton";
 import "./LoginPage.css";
 
 const LoginPage = ({ onComponentChange }) => {
+  const [passwordValue, setPasswordValue] = useState("");
+  const [emailValue, setEmailValue] = useState("");
+
   const handleRegisterClick = () => {
     onComponentChange("register");
   };
@@ -12,6 +18,12 @@ const LoginPage = ({ onComponentChange }) => {
   };
   const login = () => {
     window.location.href = "/dashboard";
+  };
+  const handleInputChangeEmail = (e) => {
+    setEmailValue(e.target.value);
+  };
+  const handleInputChangePassword = (e) => {
+    setPasswordValue(e.target.value);
   };
   return (
     <>
@@ -29,32 +41,39 @@ const LoginPage = ({ onComponentChange }) => {
               <FontAwesomeIcon icon={faEnvelope} />
               Email
             </label>
-            <input type="email" id="email" name="email" placeholder="Email" />
+            <CustomInput
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={emailValue}
+              onChange={handleInputChangeEmail}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="password">
               <FontAwesomeIcon icon={faKey} />
               Password
             </label>
-            <input
+            <CustomInput
               type="password"
               id="password"
               name="password"
               placeholder="Password"
+              value={passwordValue}
+              onChange={handleInputChangePassword}
             />
             <span className="forgotpassword" onClick={handleForgotClick}>
               Forgot password?
             </span>
           </div>
           <div className="form-group">
-            <button className="glow-on-hover" type="button" onClick={login}>
-              Login
-            </button>
+            <CustomButton type="button" onClick={login} text={"Login"} />
           </div>
         </div>
         <div className="form-footer">
           <span className="form-footer-text">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <span onClick={handleRegisterClick}>Sign up</span>
           </span>
           {/* <div className="form-footer-divider" />

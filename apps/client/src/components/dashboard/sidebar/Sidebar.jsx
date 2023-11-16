@@ -2,11 +2,13 @@ import { useState } from "react";
 import { resources } from "../../../assets/resources";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faFilePen,
   faCalendar,
   faCog,
   faDashboard,
   faDoorOpen,
 } from "@fortawesome/free-solid-svg-icons";
+import MenuItem from "../../uiElements/menuItems/MenuItem";
 import "./Sidebar.css";
 
 const Sidebar = ({ onComponentChange }) => {
@@ -55,28 +57,13 @@ const Sidebar = ({ onComponentChange }) => {
           <span>Menu</span>
         </div>
         <div className="sidebar-menu-item" onClick={handleDashboardClick}>
-          <FontAwesomeIcon icon={faDashboard} />
-          <span
-            style={{ display: hover ? "flex" : "none" }}
-            onClick={handleDashboardClick}
-          >
-            Statistics
-          </span>
+          <MenuItem faIcon={faDashboard} text="Dashboard" hover={hover} />
         </div>
         <div className="sidebar-menu-item" onClick={handleAttendyClick}>
-          <FontAwesomeIcon icon={faCalendar} />
-          <span style={{ display: hover ? "flex" : "none" }}>
-            Take attendy
-          </span>
+          <MenuItem faIcon={faFilePen} text="Attendy" hover={hover} />
         </div>
         <div className="sidebar-menu-item" onClick={handleProfileClick}>
-          <FontAwesomeIcon icon={faCog} onClick={handleProfileClick} />
-          <span
-            style={{ display: hover ? "flex" : "none" }}
-            onClick={handleProfileClick}
-          >
-            Settings
-          </span>
+          <MenuItem faIcon={faCog} text="Profile" hover={hover} />
         </div>
       </div>
       <div className="sidebar-menu-sesion">
@@ -84,8 +71,7 @@ const Sidebar = ({ onComponentChange }) => {
           className="sidebar-menu-item-sesion"
           onClick={handleOutSesionClick}
         >
-          <FontAwesomeIcon icon={faDoorOpen} />
-          <span style={{ display: hover ? "flex" : "none" }}>Log out</span>
+          <MenuItem faIcon={faDoorOpen} text="Out of sesion" hover={hover} />
         </div>
       </div>
     </div>

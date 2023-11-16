@@ -1,6 +1,8 @@
 import { resources } from "../../../assets/resources";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import CustomInput from "../../../components/uiElements/inputs/CustomInput";
+import CustomButton from "../../../components/uiElements/buttons/CustomButton";
 import "./RegisterPage.css";
 
 const RegisterPage = ({ onComponentChange }) => {
@@ -22,32 +24,22 @@ const RegisterPage = ({ onComponentChange }) => {
         <div className="form-body">
           <div className="form-group">
             <label htmlFor="name">Introduce your name</label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <CustomInput type="text" id="name" placeholder="Enter your name" />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" placeholder="Enter your email" />
+            <CustomInput type="email" id="email" placeholder="Enter your email" />
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter your password"
-            />
+            <CustomInput type="password" id="password" placeholder="Enter your password" />
           </div>
           <div className="form-group">
             <label htmlFor="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              id="confirm-password"
-              placeholder="Confirm your password"
-            />
+            <CustomInput type="password" id="confirm-password" placeholder="Confirm your password" />
           </div>
           <div className="form-group">
-            <button className="glow-on-hover" type="button">
-              Login
-            </button>
+            <CustomButton type="submit" text="Register" />
           </div>
         </div>
       </div>

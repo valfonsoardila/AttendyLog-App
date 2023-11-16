@@ -6,6 +6,11 @@
     align-items: center;
     transition: height 0.2s ease-in-out;
 }
+.header-container svg{
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
 .header{
     display: flex;
     flex-direction: row;

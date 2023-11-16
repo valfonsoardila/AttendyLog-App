@@ -1,6 +1,7 @@
-import { resources } from "../../../assets/resources";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import CustomInput from "../../../components/uiElements/inputs/CustomInput";
+import CustomButton from "../../../components/uiElements/buttons/CustomButton";
 import "./ForgotPage.css";
 
 const ForgotPage = ({ onComponentChange }) => {
@@ -26,12 +27,10 @@ const ForgotPage = ({ onComponentChange }) => {
         <div className="form-body">
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" placeholder="Enter your email" />
+            <CustomInput type="email" id="email" placeholder="Enter your email" />
           </div>
           <div className="form-group">
-            <button className="glow-on-hover" type="button">
-              Reset
-            </button>
+            <CustomButton type="submit" text="Send" />
           </div>
         </div>
       </div>

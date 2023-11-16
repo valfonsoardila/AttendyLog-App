@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { resources } from "../../../assets/resources";
 import { motion, AnimatePresence } from "framer-motion";
 import ContentItemLeft from "../../../components/uiElements/formContainers/ContentItemLeft";
 import ContentItemRight from "../../../components/uiElements/formContainers/ContentItemRight";
@@ -9,6 +10,9 @@ import "./AttendyPage.css";
 const AttendyPage = () => {
   const [showDialog, setShowDialog] = useState(true);
   const [eventType, setEventType] = useState(null);
+  const [hoverFaith, setHoverFaith] = useState(false);
+  const [hoverSocial, setHoverSocial] = useState(false);
+  const [image, setImage] = useState(resources.attend); // Set the image to the default one
   const attendeeStore = useAttendeeStore(); // Use the store
   const totalValue = attendeeStore[eventType]?.total || 0; // Get the total value from the store
 
@@ -30,6 +34,22 @@ const AttendyPage = () => {
     //   setDetail(value);
     // }
   };
+  const handleMouseEnterFaith = () => {
+    setHoverFaith(true);
+    setImage(resources.church);
+  };
+  const handleMouseLeaveFaith = () => {
+    setHoverFaith(false);
+    setImage(resources.attend);
+  };
+  const handleMouseEnterSocial = () => {
+    setHoverSocial(true);
+    setImage(resources.staff);
+  };
+  const handleMouseLeaveSocial = () => {
+    setHoverSocial(false);
+    setImage(resources.attend);
+  };
   return (
     <div className="attendy-container">
       <div className="attendy-container-header">
@@ -45,12 +65,31 @@ const AttendyPage = () => {
               className="dialog"
             >
               <h3>Choose event type:</h3>
-              <button onClick={() => handleDialogClose("faith")}>
+              <button
+                onClick={() => handleDialogClose("faith")}
+                onMouseEnter={handleMouseEnterFaith}
+                onMouseLeave={handleMouseLeaveFaith}
+              >
                 Faith Event
               </button>
-              <button onClick={() => handleDialogClose("social")}>
+              <button
+                onClick={() => handleDialogClose("social")}
+                onMouseEnter={handleMouseEnterSocial}
+                onMouseLeave={handleMouseLeaveSocial}
+              >
                 Social Event
               </button>
+              <div className="dialog-content-image">
+                <motion.img
+                  key={eventType} // Asegura que la animación se dispare al cambiar el eventType
+                  src={image}
+                  alt="attendy"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>

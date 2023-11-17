@@ -146,7 +146,7 @@ const HomePage = () => {
           <h3>Users</h3>
         </div>
         <div className="columnTwo-body">
-          {/* <SimpleTable data={Users} /> */}
+          <SimpleTable data={Users} />
         </div>
       </div>
     </motion.div>

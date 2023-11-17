@@ -32,7 +32,9 @@ function SimpleTable(prop) {
     const table = useReactTable(data, columns)
   return (
     <div className="container-table">
-      
+      <table className="table">
+        <thead></thead>
+      </table>
     </div>
   )
 }

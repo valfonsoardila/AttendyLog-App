@@ -132,9 +132,23 @@ const HomePage = () => {
         <div className="columnOne-rowOne">
           <div id="chart" className="chart-lineal" />
         </div>
-        <div className="columnOne-rowTwo"></div>
+        <div className="columnOne-rowTwo">
+          <div className="columnOne-rowTwo-header">
+            <h3>Attendances</h3>
+          </div>
+          <div className="columnOne-rowTwo-body">
+            
+          </div>
+        </div>
       </div>
-      <div className="columnTwo"></div>
+      <div className="columnTwo">
+        <div className="columnTwo-header">
+          <h3>Users</h3>
+        </div>
+        <div className="columnTwo-body">
+          {/* <SimpleTable data={Users} /> */}
+        </div>
+      </div>
     </motion.div>
   );
 };

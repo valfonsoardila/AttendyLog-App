@@ -16,10 +16,68 @@ const AttendyPage = () => {
   const [image, setImage] = useState(resources.attend); // Set the image to the default one
   const attendeeStore = useAttendeeStore(); // Use the store
   const totalValue = attendeeStore[eventType]?.total || 0; // Get the total value from the store
-  
+  const [date, setDate] = useState(""); // Estado para el input de fecha
+  const [detail, setDetail] = useState(""); // Estado para el input de detalle
+  const faithObject = attendeeStore.faith;
+  const socialObject = attendeeStore.social;
   // Mostrar el valor de total en la consola
   // console.log("Total value:", totalValue);
 
+  const handleSave = () => {
+    eventType === "faith" ? saveFaith() : saveSocial();
+  };
+  const saveFaith = () => {
+    const dataToSave = {
+      ...faithObject,
+      date: date,
+      detail: detail,
+    };
+  
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSave),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Post creado:", data);
+        // Puedes realizar otras acciones después de la creación del post
+      })
+      .catch((error) => {
+        console.error("Error al crear el post:", error);
+      });
+  };
+  const saveSocial = () => {
+    const dataToSave = {
+      ...socialObject,
+      date: date,
+      detail: detail,
+    };
+  
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSave),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Post creado:", data);
+        // Puedes realizar otras acciones después de la creación del post
+      })
+      .catch((error) => {
+        console.error("Error al crear el post:", error);
+      });
+  };
+  const handleSetDate = (e) => {
+    setDate(e.target.value);
+  };
+  const handleSetDetail = (e) => {
+    setDetail(e.target.value);
+  };
   const handleDialogClose = (selectedType) => {
     setShowDialog(false);
     setEventType(selectedType);
@@ -114,7 +172,13 @@ const AttendyPage = () => {
                   <div className="form-body-subheader">
                     <div className="form-body-header-calendar">
                       <label htmlFor="date">Date</label>
-                      <input type="date" name="date" id="date" />
+                      <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        value={date}
+                        onChange={handleSetDate}
+                      />
                     </div>
                     <div className="form-body-header-detail">
                       <label htmlFor="detail">Detail</label>
@@ -123,6 +187,8 @@ const AttendyPage = () => {
                         name="detail"
                         id="detail"
                         placeholder="Detail on event"
+                        value={detail}
+                        onChange={handleSetDetail}
                       />
                     </div>
                     <div className="form-body-header-total">
@@ -243,7 +309,7 @@ const AttendyPage = () => {
                       </div>
                     </div>
                     <div className="form-body-subcontent-button">
-                      <button>Save</button>
+                      <button onClick={handleSave}>Save</button>
                     </div>
                   </div>
                 </div>
@@ -256,7 +322,7 @@ const AttendyPage = () => {
             <h3>Attendances registered</h3>
           </div>
           <div className="assistance-inquiries-body">
-            <SimpleTable />
+            {/* <SimpleTable /> */}
           </div>
         </div>
       </div>

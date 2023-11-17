@@ -8,7 +8,6 @@ const LayoutDashboard = () => {
   const [activeComponent, setActiveComponent] = useState("dashboard");
   const handleComponentChange = (component) => {
     setActiveComponent(component);
-    console.log("componente: "+component);
   };
   return (
     <div className='main-container' style={{ backgroundImage: `url(${resources.bgDash})` }}>

@@ -27,7 +27,7 @@ El archivo package.json del proyecto contiene información sobre la versión, de
 
 ## `Estructura del proyecto`
 
-El proyecto utiliza React con Vite y Zustand, por lo que asegúrate de tener familiaridad con estas tecnologías para trabajar con el proyecto de manera efectiva.
+El proyecto utiliza React con Vite y Zustand y turboRepo, por lo que asegúrate de tener familiaridad con estas tecnologías para trabajar con el proyecto de manera efectiva.
 
 ## `Desarrollo y depuración`
 

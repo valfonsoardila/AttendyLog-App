@@ -1,4 +1,5 @@
 import { useReactTable } from '@tanstack/react-table'
+import './SimpleTable.css';
 
 function SimpleTable(prop) {
     const {data} = prop
@@ -32,8 +33,10 @@ function SimpleTable(prop) {
     const table = useReactTable(data, columns)
   return (
     <div className="container-table">
-      <table className="table">
-        <thead></thead>
+      <table>
+        <thead>
+            
+        </thead>
       </table>
     </div>
   )

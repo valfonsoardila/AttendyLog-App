@@ -268,6 +268,8 @@
 .form-body-header-total input[type="text"] {
   background: #fff;
   background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
   color: black;
   border: 1px solid #ccc; /* Borde opcional para darle un aspecto más definido */
   padding: 8px; /* Ajusta el espaciado interno según sea necesario */

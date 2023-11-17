@@ -33,13 +33,14 @@ El proyecto utiliza React con Vite y Zustand y turboRepo, por lo que asegúrate 
 
 Para instalar y utilizar Zustand en un proyecto de React con Vite, sigue estos pasos:
 
-- Instala Zustand: `npm install zustand`
-- Instala Framer motion: `npm i framer-motion`
-- Instala React Router Dom: `npm i react-router-dom`
-- Instala echarts: `npm i echarts`
-- Instala un editor de tablas: `npm i tanstack/react-table`
-- Instala el proveedor de iconos: `npm i @fortawesome/react-fontawesome`
-- Instala los paquetes de iconos:
+- Instalar turbo: `npm i turbo -D` //se instala como dependencia de desarrollo 
+- Instalar Zustand: `npm install zustand`
+- Instalar Framer motion: `npm i framer-motion`
+- Instalar React Router Dom: `npm i react-router-dom`
+- Instalar echarts: `npm i echarts`
+- Instalar un editor de tablas: `npm i tanstack/react-table`
+- Instalar el proveedor de iconos: `npm i @fortawesome/react-fontawesome`
+- Instalar los paquetes de iconos:
 
 <table style="text-align: center;">
   <tr style="background: linear-gradient(to bottom, #128cc9, #0f8ac7, #037dbb);">

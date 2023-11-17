@@ -48,6 +48,16 @@ Para instalar y utilizar Zustand en un proyecto de React con Vite, sigue estos p
     <th>Package</th>
     <th>console command</th>
   </tr>
+  <tr style="background: linear-gradient(to bottom, #616161, #4f4f4f);">
+    <td>Brands svg icons</td>
+    <td>@fortawesome/free-brands-svg-icons</td>
+    <td>npm i @fortawesome/free-brands-svg-icons</td>
+  </tr>
+  <tr style="background: linear-gradient(to bottom, #616161, #4f4f4f);">
+    <td>Solid svg icons</td>
+    <td>@fortawesome/free-solid-svg-icons</td>
+    <td>npm i @fortawesome/free-solid-svg-icons</td>
+  </tr>
 </table>
 
 ## Agrega Zustand a la sección dependencies en el archivo package.json

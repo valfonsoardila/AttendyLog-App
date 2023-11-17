@@ -1,18 +1,24 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./SimpleTable.css";
 
 function SimpleTable(prop) {
-  const { data } = prop;
+  const { data, dim, orientation, maxDist, cardDim } = prop;
 
   return (
     <div className="container-table">
-      <div className="table-wrapper">
-        <div className="table-wrapper-boddy">
+      <div
+        className="table-wrapper"
+        style={{ height: cardDim.height, width: cardDim.width ,maxWidth: maxDist.maxWidth, maxHeight: maxDist.maxHeight }}
+      >
+        <div
+          className="table-wrapper-boddy"
+          style={{ flexDirection: orientation }}
+        >
           <AnimatePresence>
             {data.map((item) => (
               <motion.div
                 className="user-box"
+                style={{ width: dim.width, height: dim.height }}
                 key={item.id}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}

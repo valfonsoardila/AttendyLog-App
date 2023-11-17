@@ -110,6 +110,13 @@
     font-weight: 600;
     color: rgba(0,0,0,0.8);
 }
+.columnOne-rowTwo-body{
+    display: flex;
+    width: 100%;
+    height: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+}
 .columnTwo-body{
     display: flex;
     width: 100%;

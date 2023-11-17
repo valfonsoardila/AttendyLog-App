@@ -6,6 +6,7 @@ import ContentItemRight from "../../../components/uiElements/formContainers/Cont
 import ButtonSelection from "../../../components/uiElements/buttonSelection/ButtonSelection";
 import useAttendeeStore from "../../../store/useAttendeeStore";
 import SimpleTable from "../../../components/uiElements/table/SimpleTable";
+import Users from "../../../assets/json/Users.json";
 import "./AttendyPage.css";
 
 const AttendyPage = () => {
@@ -22,7 +23,18 @@ const AttendyPage = () => {
   const socialObject = attendeeStore.social;
   // Mostrar el valor de total en la consola
   // console.log("Total value:", totalValue);
-
+  const dimensionsVertical = {
+    width: "98%",
+    height: "60px",
+  };
+  const maxDimensionsVertical = {
+    maxHeight: "480px",
+    maxWidth: "auto",
+  };
+  const cardDimensionsVertical = {
+    height: "auto",
+    width: "100%",
+  };
   const handleSave = () => {
     eventType === "faith" ? saveFaith() : saveSocial();
   };
@@ -32,7 +44,7 @@ const AttendyPage = () => {
       date: date,
       detail: detail,
     };
-  
+
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: {
@@ -55,7 +67,7 @@ const AttendyPage = () => {
       date: date,
       detail: detail,
     };
-  
+
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: {
@@ -322,7 +334,13 @@ const AttendyPage = () => {
             <h3>Attendances registered</h3>
           </div>
           <div className="assistance-inquiries-body">
-            {/* <SimpleTable /> */}
+            <SimpleTable
+              data={Users}
+              dim={dimensionsVertical}
+              orientation={"column"}
+              maxDist={maxDimensionsVertical}
+              cardDim={cardDimensionsVertical}
+            />
           </div>
         </div>
       </div>

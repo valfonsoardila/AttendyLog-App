@@ -7,6 +7,30 @@ import Users from "../../../assets/json/Users.json";
 import AttendifyLog from "../../../assets/json/AttendifyLog.json";
 
 const HomePage = () => {
+  const dimensionsVertical = {
+    width: "98%",
+    height: "60px",
+  };
+  const dimensionsHorizontal = {
+    width: "120px",
+    height: "98%",
+  };
+  const maxDimensionsVertical = {
+    maxHeight: "565px",
+    maxWidth: "auto",
+  };
+  const maxDimensionsHorizontal = {
+    maxHeight: "100%",
+    maxWidth: "790px",
+  };
+  const cardDimensionsVertical = {
+    height: "auto",
+    width: "100%",
+  };
+  const cardDimensionsHorizontal = {
+    width: "auto",
+    height: "100%",
+  };
   useEffect(() => {
     // Procesar los datos del JSON para organizarlos por mes y contar la cantidad de registros por mes
     const processedData = processData(AttendifyLog);
@@ -137,7 +161,13 @@ const HomePage = () => {
             <h3>Attendances</h3>
           </div>
           <div className="columnOne-rowTwo-body">
-            
+            <SimpleTable
+              data={Users}
+              dim={dimensionsHorizontal}
+              orientation={"row"}
+              maxDist={maxDimensionsHorizontal}
+              cardDim={cardDimensionsHorizontal}
+            />
           </div>
         </div>
       </div>
@@ -146,7 +176,13 @@ const HomePage = () => {
           <h3>Users</h3>
         </div>
         <div className="columnTwo-body">
-          <SimpleTable data={Users} />
+          <SimpleTable
+            data={Users}
+            dim={dimensionsVertical}
+            orientation={"column"}
+            maxDist={maxDimensionsVertical}
+            cardDim={cardDimensionsVertical}
+          />
         </div>
       </div>
     </motion.div>

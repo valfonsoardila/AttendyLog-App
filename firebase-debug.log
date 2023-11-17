@@ -1,0 +1,21 @@
+[debug] [2023-11-17T04:38:32.329Z] ----------------------------------------------------------------------
+[debug] [2023-11-17T04:38:32.351Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Victor\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-17T04:38:32.355Z] CLI Version:   12.8.0
+[debug] [2023-11-17T04:38:32.357Z] Platform:      win32
+[debug] [2023-11-17T04:38:32.359Z] Node Version:  v18.16.0
+[debug] [2023-11-17T04:38:32.368Z] Time:          Thu Nov 16 2023 23:38:32 GMT-0500 (hora estándar de Colombia)
+[debug] [2023-11-17T04:38:32.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-17T04:38:32.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-17T04:38:32.438Z] > authorizing via signed-in user (backudcloud@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Proyectos web\React js\attendy_log
+

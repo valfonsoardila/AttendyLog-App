@@ -45,7 +45,7 @@ Para instalar y utilizar Zustand en un proyecto de React con Vite, sigue estos p
   <tr style="background: linear-gradient(to bottom, #128cc9, #0f8ac7, #037dbb);">
     <th>Name</th>
     <th>Package</th>
-    <th>Command</th>
+    <th>console command</th>
   </tr>
 </table>
 

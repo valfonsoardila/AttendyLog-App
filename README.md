@@ -8,3 +8,8 @@ Web application for managing attendance at capacity. With clean code, dockerized
 ## `Login`
 
 ![AttendyLog](https://github.com/VictorArdila/AttendyLog-App/assets/89551043/d5ccecfb-a522-435f-96d6-7ad5a6278fdf)
+
+## `Dashboard`
+
+![dashboard](https://github.com/VictorArdila/AttendyLog-App/assets/89551043/3e7e0b94-a7e7-4869-84ed-502db7c16276)
+

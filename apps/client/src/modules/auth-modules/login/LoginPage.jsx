@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../../../components/uiElements/inputs/CustomInput";
 import CustomButton from "../../../components/uiElements/buttons/CustomButton";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import "./LoginPage.css";
 
 const LoginPage = ({ onComponentChange }) => {
@@ -26,31 +27,70 @@ const LoginPage = ({ onComponentChange }) => {
     setPasswordValue(e.target.value);
   };
 
-  const handleLogin = async () => {
-    try {
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          emailValue,
-          passwordValue,
-        }),
-      });
-
-      if (response.ok) {
-        // Manejar la respuesta exitosa, por ejemplo, redirigir a otra página
-        console.log("Inicio de sesión exitoso");
-        window.location.href = "/dashboard";
+  const handleLogin = () => {
+    if (emailValue === "" || passwordValue === "") {
+      setMessage("Por favor, ingresa todos los campos");
+      setAlertView(true);
+      setTimeout(() => {
+        setAlertView(false);
+      }, 2600);
+      return;
+    } else {
+      if (emailValue === "" && passwordValue !== "") {
+        setMessage("No ha ingresado el correo electrónico");
+        setAlertView(true);
+        setTimeout(() => {
+          setAlertView(false);
+        }, 2600);
+        return;
       } else {
-        // Manejar errores, por ejemplo, mostrar un mensaje de error
-        console.error("Error al iniciar sesión");
+        if (emailValue !== "" && passwordValue === "") {
+          setMessage("No ha ingresado la contraseña");
+          setAlertView(true);
+          setTimeout(() => {
+            setAlertView(false);
+          }, 2600);
+          return;
+        } else {
+          if (!emailValue.includes("@")) {
+            setMessage("El correo ingresado no es válido");
+            setAlertView(true);
+            setTimeout(() => {
+              setAlertView(false);
+            }, 2600);
+            return;
+          } else {
+            if (passwordValue.length < 6) {
+              setMessage("La contraseña debe tener al menos 6 caracteres");
+              setAlertView(true);
+              setTimeout(() => {
+                setAlertView(false);
+              }, 2600);
+              return;
+            } else {
+              const auth = getAuth();
+              signInWithEmailAndPassword(auth, emailValue, passwordValue)
+                .then((userCredential) => {
+                  const user = userCredential.user;
+                  window.location.href = "/dashboard";
+                })
+                .catch((error) => {
+                  const errorMessage = error.message;
+                  if (errorMessage.includes("Firebase") || error === "Error: The emailValue address is badly formatted.") {
+                    setMessage("Email o contraseña incorrectos");
+                    setAlertView(true);
+                    setTimeout(() => {
+                      setAlertView(false);
+                    }, 2600);
+                  }
+                });
+            }
+          }
+        }
       }
-    } catch (error) {
-      console.error("Error de red:", error);
     }
   };
+
 
 
   return (
@@ -65,34 +105,34 @@ const LoginPage = ({ onComponentChange }) => {
       <div className="formcontainer">
         <div className="form">
           <div className="form-group">
-            <label htmlFor="email">
+            <label htmlFor="emailValue">
               <FontAwesomeIcon icon={faEnvelope} />
               Email
             </label>
             <CustomInput
-              type="email"
-              id="email"
-              name="email"
+              type="emailValue"
+              id="emailValue"
+              name="emailValue"
               placeholder="Email"
               value={emailValue}
               onChange={handleInputChangeEmail}
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">
+            <label htmlFor="passwordValue">
               <FontAwesomeIcon icon={faKey} />
               Password
             </label>
             <CustomInput
-              type="password"
-              id="password"
-              name="password"
+              type="passwordValue"
+              id="passwordValue"
+              name="passwordValue"
               placeholder="Password"
               value={passwordValue}
               onChange={handleInputChangePassword}
             />
             <span className="forgotpassword" onClick={handleForgotClick}>
-              Forgot password?
+              Forgot passwordValue?
             </span>
           </div>
           <div className="form-group">

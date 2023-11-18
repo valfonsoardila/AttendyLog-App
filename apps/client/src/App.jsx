@@ -1,4 +1,5 @@
 import './App.css'
+import { FirebaseProvider } from "./context/FirebaseContext"
 import { BrowserRouter as Router } from "react-router-dom"
 import BaseRoutes from "./routes/BaseRoutes";
 
@@ -6,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <BaseRoutes />
+        <FirebaseProvider>
+          <BaseRoutes />
+        </FirebaseProvider>
       </Router>
     </div>
   )

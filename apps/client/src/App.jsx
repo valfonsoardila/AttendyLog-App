@@ -1,5 +1,5 @@
 import './App.css'
-import { FirebaseProvider } from "./context/FirebaseContext"
+import { FirebaseProvider } from "./contexts/FirebaseContext"
 import { BrowserRouter as Router } from "react-router-dom"
 import BaseRoutes from "./routes/BaseRoutes";
 

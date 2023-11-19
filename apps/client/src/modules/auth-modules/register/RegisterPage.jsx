@@ -5,39 +5,88 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import CustomInput from "../../../components/uiElements/inputs/CustomInput";
 import CustomButton from "../../../components/uiElements/buttons/CustomButton";
 import CustomLabel from "../../../components/uiElements/labels/CustomLabel";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import "./RegisterPage.css";
 
 const RegisterPage = ({ onComponentChange }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState(""); // Para mostrar mensajes al usuario
   const [alertView, setAlertView] = useState(false); // Para mostrar mensajes al usuario
-  
-  const handleRegisterClick = async () => {
-    try {
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title: "foo",
-          body: "bar",
-          userId: 1,
-        }),
-      });
 
-      const data = await response.json();
-      onComponentChange("login");
-      setMessage(`Registration successful. User ID: ${data.id}`);
+  // const handleRegisterClick = async () => {
+  //   try {
+  //     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         title: "foo",
+  //         body: "bar",
+  //         userId: 1,
+  //       }),
+  //     });
+  //     const data = await response.json();
+  //     onComponentChange("login");
+  //     setMessage(`Registration successful. User ID: ${data.id}`);
+  //     setAlertView(true);
+  //   } catch (error) {
+  //     setMessage("Error during registration. Please try again.");
+  //     setAlertView(true);
+  //   }
+  // };
+
+  const handleRegisterClick = () => {
+    if (
+      name === "" ||
+      email === "" ||
+      password === "" ||
+      confirmPassword === ""
+    ) {
+      setMessage("Por favor, ingresa todos los campos");
       setAlertView(true);
-    } catch (error) {
-      setMessage("Error during registration. Please try again.");
+      setTimeout(() => {
+        setAlertView(false);
+      }, 2600);
+      return;
+    }
+    if (password !== confirmPassword) {
+      setMessage("Las contraseñas no coinciden");
       setAlertView(true);
+      setTimeout(() => {
+        setAlertView(false);
+      }, 2600);
+      return;
+    } else {
+      // Si las contraseñas coinciden, puedes continuar con el registro
+      const auth = getAuth(); // Obtén la instancia de autenticación
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          onComponentChange("login");
+        })
+        .catch((error) => {
+          setMessage(
+            "Ha ocurrido un error al crear la cuenta. Por favor, intenta nuevamente"
+          );
+          setAlertView(true);
+          setTimeout(() => {
+            setAlertView(false);
+          }, 2600);
+        });
     }
   };
+  
+  const handleLoginPage = () => {
+    onComponentChange("login");
+  };
+  
   return (
     <>
       <div className="back-arrow">
-        <FontAwesomeIcon icon={faArrowLeft} onClick={handleRegisterClick} />
+        <FontAwesomeIcon icon={faArrowLeft} onClick={handleLoginPage} />
       </div>
       <div className="user-image">
         <img src={resources.user} alt="user" />

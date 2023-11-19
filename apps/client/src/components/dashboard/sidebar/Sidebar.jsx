@@ -9,6 +9,7 @@ import {
   faDoorOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import MenuItem from "../../uiElements/menuItems/MenuItem";
+import { getAuth, signOut } from "firebase/auth";
 import "./Sidebar.css";
 
 const Sidebar = ({ onComponentChange }) => {

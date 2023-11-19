@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { resources } from "../../../assets/resources";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilePen,
-  faCalendar,
   faCog,
   faDashboard,
   faDoorOpen,
@@ -13,7 +11,6 @@ import { getAuth, signOut } from "firebase/auth";
 import "./Sidebar.css";
 
 const Sidebar = ({ onComponentChange }) => {
-  const [expandedData, setExpandedData] = useState(false);
   const [hover, setHover] = useState(false);
 
   const handleDashboardClick = () => {

@@ -78,11 +78,11 @@ const RegisterPage = ({ onComponentChange }) => {
         });
     }
   };
-  
+
   const handleLoginPage = () => {
     onComponentChange("login");
   };
-  
+
   return (
     <>
       <div className="back-arrow">
@@ -98,22 +98,53 @@ const RegisterPage = ({ onComponentChange }) => {
         <div className="form-body">
           <div className="form-group">
             <CustomLabel htmlFor="name" text="Introduce your name" />
-            <CustomInput type="text" id="name" placeholder="Enter your name" />
+            <CustomInput
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="form-group">
             <CustomLabel htmlFor="email" text="Introduce your email" />
-            <CustomInput type="email" id="email" placeholder="Enter your email" />
+            <CustomInput
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className="form-group">
             <CustomLabel htmlFor="password" text="Introduce your password" />
-            <CustomInput type="password" id="password" placeholder="Enter your password" />
+            <CustomInput
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
           <div className="form-group">
-            <CustomLabel htmlFor="confirm-password" text="Confirm your password" />
-            <CustomInput type="password" id="confirm-password" placeholder="Confirm your password" />
+            <CustomLabel
+              htmlFor="confirm-password"
+              text="Confirm your password"
+            />
+            <CustomInput
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm your password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
           </div>
           <div className="form-group">
-            <CustomButton type="submit" text="Register" onClick={handleRegisterClick} />
+            <CustomButton
+              type="submit"
+              text="Register"
+              onClick={handleRegisterClick}
+            />
           </div>
         </div>
         <div className="form-footer-alert">

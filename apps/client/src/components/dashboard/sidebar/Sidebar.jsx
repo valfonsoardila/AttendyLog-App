@@ -27,9 +27,17 @@ const Sidebar = ({ onComponentChange }) => {
     onComponentChange("profile");
     console.log("profile");
   };
-  const handleOutSesionClick = () => {
-    window.location.href = "/";
-  };
+  const handleSignOut = () => {
+    const auth = getAuth();
+    signOut(auth)
+      .then(() => {
+        console.log("Sign-out successful.");
+        window.location.href = "/";
+      })
+      .catch((error) => {
+        console.log("An error happened.");
+      });
+  }
   const changeHover = () => {
     setHover(!hover);
   };
@@ -69,7 +77,7 @@ const Sidebar = ({ onComponentChange }) => {
       <div className="sidebar-menu-sesion">
         <div
           className="sidebar-menu-item-sesion"
-          onClick={handleOutSesionClick}
+          onClick={handleSignOut}
         >
           <MenuItem faIcon={faDoorOpen} text="Out of sesion" hover={hover} />
         </div>
